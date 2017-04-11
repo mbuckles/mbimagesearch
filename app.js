@@ -61,21 +61,13 @@ if(offset){
    }
    res.json(bingData);
  });
- //return res.json(data);
-//}
-//return res.json({
-//searchVal,
-//offset
-//});
-
 });
 
 //app.use('/users', users);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.listen(process.env.PORT || 3000, ()=>{
+//app.listen(process.env.PORT || 3000, ()=>{
 //console.log('Working');
-});
-
+//});
 module.exports = app;
