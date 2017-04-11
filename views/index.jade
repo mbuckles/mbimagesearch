@@ -2,4 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  div
+  ul User Story:
+    li User Story: I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+    li I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+    li  I can get a list of the most recently submitted search strings.
+  br
+  ul Instructions:
+    li Place the following onto the "end" of the url in the address bar above: /api/imagesearch/loldog?offset=2
+    li The entire address should look like: https://mbimagesearch.herokuapp.com/api/imagesearch/loldog?offset=2
+    li If you wish to do a different search, simply replace "loldog" minus the quotation marks.
+    li A new search for "lolcat" would look like:  https://mbimagesearch.herokuapp.com/api/imagesearch/lolcat?offset=2
